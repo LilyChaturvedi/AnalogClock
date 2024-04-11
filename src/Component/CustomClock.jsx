@@ -42,36 +42,33 @@ const CustomClock = ({
       >
         <div
           style={{
-            backgroundColor: "red",
-            height: "54px",
-            width: "4px",
             transform: `rotate(${hourDegrees}deg)`,
           }}
           className="hand"
         >
-          <i style={{}}></i>
+          <i
+            style={{ backgroundColor: "red", height: "54px", width: "4px" }}
+          ></i>
         </div>
         <div
           className="hand"
           style={{
-            backgroundColor: "yellow",
-            height: "74px",
-            width: "2px",
             transform: `rotate(${minuteDegrees}deg)`,
           }}
         >
-          <i></i>
+          <i
+            style={{ backgroundColor: "yellow", height: "74px", width: "4px" }}
+          ></i>
         </div>
         <div
           className="hand"
           style={{
-            backgroundColor: "white",
-            height: "94px",
-            width: "1px",
             transform: `rotate(${secondDegrees}deg)`,
           }}
         >
-          <i></i>
+          <i
+            style={{ backgroundColor: "white", height: "94px", width: "1px" }}
+          ></i>
         </div>
         {arr.map((item, index) => {
           return (
